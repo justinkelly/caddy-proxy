@@ -1,5 +1,5 @@
 FROM nimmis/alpine:3.4
-MAINTAINER BlackGlory <woshenmedoubuzhidao@blackglory.me>
+MAINTAINER Justin Kelly <justin@kelly.org.au>
 
 RUN apk update && apk upgrade && \
     apk add curl && \
