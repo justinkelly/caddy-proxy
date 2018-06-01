@@ -4,6 +4,7 @@ MAINTAINER Justin Kelly <justin@kelly.org.au>
 RUN apk update && apk upgrade && \
     apk add curl && \
     apk add tar && \
+    apk add gzip && \
     rm -rf /var/cache/apk/*
 
 RUN mkdir -p /tmp/caddy \
