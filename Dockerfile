@@ -19,8 +19,6 @@ RUN curl -sL -o docker-gen-linux-amd64-$DOCKER_GEN_VERSION.tar.gz https://github
  && tar -C /usr/local/bin -xvzf docker-gen-linux-amd64-$DOCKER_GEN_VERSION.tar.gz \
  && rm /docker-gen-linux-amd64-$DOCKER_GEN_VERSION.tar.gz
 
-RUN printf ":80\nproxy / caddyserver.com" > /etc/Caddyfile
-
 ADD etc /etc
 
 ENV DOCKER_HOST unix:///tmp/docker.sock
